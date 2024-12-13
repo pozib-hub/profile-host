@@ -1,0 +1,38 @@
+.wrapper {}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing);
+    font-weight: 600;
+    font-size: 18px;
+
+    &.clickTitle {
+        cursor: pointer;
+    }
+}
+
+.content {
+    overflow: hidden;
+}
+
+.chevronIcon {
+    cursor: pointer;
+
+    svg {
+        transition: transform 0.1s ease;
+        transform: rotate(180deg);
+        height: 28px;
+        width: 28px;
+    }
+
+    &.open svg {
+        transform: rotate(360deg);
+    }
+}

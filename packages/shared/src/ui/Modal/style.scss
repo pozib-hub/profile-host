@@ -1,0 +1,110 @@
+.ant-root {
+    .ant-mask {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        height: 100%;
+        background-color: var(--color-overlay);
+        pointer-events: none;
+    }
+
+    // .ant-wrap {
+    //     position: fixed;
+    //     inset: 0;
+    //     z-index: 1000;
+    //     overflow: auto;
+    //     outline: 0;
+    //     -webkit-overflow-scrolling: touch;
+    // }
+
+    // .ant-fade-appear {}
+
+    // .ant-fade-appear-active {}
+
+    // .ant-fade {}
+
+    // .ant-zoom-enter,
+    // .ant-zoom-appear {
+    //     transform: none;
+    //     opacity: 0;
+    //     animation-duration: 0/3s;
+    //     user-select: none;
+    // }
+
+    // .ant-zoom-appear-active {}
+
+    // .ant-zoom {}
+
+    // .ant-zoom-leave {
+    //     pointer-events: none;
+    // }
+
+    // .ant-hidden {
+    //     display: none;
+    // }
+
+    // .ant {
+    //     box-sizing: border-box;
+    //     margin: 0 auto;
+    //     padding: 0;
+    //     color: black;
+    //     list-style: none;
+    //     pointer-events: none;
+    //     position: relative;
+    //     top: 100px;
+    //     width: auto;
+    //     max-width: calc(100vw - calc(6px * 2));
+    //     padding-bottom: 6px;
+    // }
+
+    // .ant-content {
+    //     position: relative;
+    //     background-color: white;
+    //     background-clip: padding-box;
+    //     border: 0;
+    //     border-radius: 4px;
+    //     // box-shadow: var(--ant-box-shadow);
+    //     pointer-events: auto;
+    //     // padding: var(--ant-modal-content-padding);
+    // }
+
+}
+
+// {
+//     [`${componentCls}-root`]: {
+//       [`${componentCls}${antCls}-zoom-enter, ${componentCls}${antCls}-zoom-appear`]: {
+//         // reset scale avoid mousePosition bug
+//         transform: 'none',
+//         opacity: 0,
+//         animationDuration: token.motionDurationSlow,
+//         // https://github.com/ant-design/ant-design/issues/11777
+//         userSelect: 'none',
+//       },
+
+//       // https://github.com/ant-design/ant-design/issues/37329
+//       // https://github.com/ant-design/ant-design/issues/40272
+//       [`${componentCls}${antCls}-zoom-leave ${componentCls}-content`]: {
+//         pointerEvents: 'none',
+//       },
+
+//       [`${componentCls}-mask`]: {
+//         ...box('fixed'),
+//         zIndex: token.zIndexPopupBase,
+//         height: '100%',
+//         backgroundColor: token.colorBgMask,
+//         pointerEvents: 'none',
+
+//         [`${componentCls}-hidden`]: {
+//           display: 'none',
+//         },
+//       },
+
+//       [`${componentCls}-wrap`]: {
+//         ...box('fixed'),
+//         zIndex: token.zIndexPopupBase,
+//         overflow: 'auto',
+//         outline: 0,
+//         WebkitOverflowScrolling: 'touch',
+//       },
+//     },
+//   },

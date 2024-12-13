@@ -1,0 +1,113 @@
+.carousel {
+    :global {
+
+        .slider-wrapper li.slide {
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        .control-dots {
+            display: flex;
+            width: min-content;
+            left: 50%;
+            transform: translateX(-50%);
+            list-style: none;
+
+            :hover {
+                background-color: var(--accent-color);
+            }
+        }
+
+        .thumbs {
+            display: flex;
+        }
+
+        .thumb {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:focus,
+            &:hover,
+            &.selected {
+                border: 2px solid var(--accent-color);
+            }
+        }
+
+        .carousel.carousel-slider .control-arrow {
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
+}
+
+.dynamicDots {
+    // background-color: red;
+
+    :global .slider-wrapper {
+        margin-bottom: 32px;
+    }
+
+    :global .slider-wrapper .slide {
+        margin-bottom: 32px;
+        // border-radius: 24px;
+        // overflow: hidden;
+    }
+
+    .arrow {
+
+        &_prev,
+        &_next {
+            bottom: 0;
+            transform: translateX(-50%);
+
+            svg {
+                color: gray;
+            }
+        }
+    }
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 16px;
+    background-color: gray;
+
+    cursor: pointer;
+
+    &:hover {
+        transition: background-color 0.15s ease;
+    }
+
+    &.selected {
+        background-color: var(--accent-color);
+    }
+}
+
+.arrow {
+
+    &_prev,
+    &_next {
+        outline: 0;
+        border: 0;
+        background: none;
+        margin-top: -13px;
+        font-size: 18px;
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+
+        :hover {
+            color: var(--accent-color);
+        }
+    }
+}
+
+.none {
+    opacity: 0;
+    cursor: inherit;
+    display: none;
+}

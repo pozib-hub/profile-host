@@ -1,0 +1,152 @@
+.Button {
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: var(--accent-color);
+
+        .addonLeft svg,
+        .addonRight svg {
+            color: var(--accent-color);
+        }
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        width: 20px;
+        height: 20px;
+        border: 3px solid var(--accent-color);
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+}
+
+.withAddon {
+    padding: 0 16px;
+}
+
+.addonLeft,
+.addonRight {
+    display: flex;
+}
+
+.addonRight svg,
+.addonLeft svg {
+    color: var(--hint-color);
+}
+
+
+.clear {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+
+    &.success {
+        color: var(--save-color);
+    }
+}
+
+.filled {
+    background: var(--light-bg-color);
+    border: none;
+    outline: none;
+    border-radius: 34px;
+    border: 2px solid transparent;
+
+
+    &.success {
+        background-color: var(--save-color);
+        color: white;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}
+
+.outline {
+    background: none;
+    border-radius: 34px;
+
+    &:hover {
+        border: 2px solid var(--accent-color);
+    }
+
+    &.normal {
+        border: 2px solid var(--icon-color);
+    }
+
+    &.error {
+        border: 2px solid var(--cancel-color);
+        color: var(--cancel-color);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &.success {
+        border: 2px solid var(--save-color);
+    }
+}
+
+.square {
+    padding: 0;
+}
+
+.square.m {
+    width: var(--font-line-m);
+    height: var(--font-line-m);
+}
+
+.square.l {
+    width: var(--font-line-l);
+    height: var(--font-line-l);
+}
+
+.square.xl {
+    width: var(--font-line-xl);
+    height: var(--font-line-xl);
+}
+
+.s {
+    line-height: 15px;
+    font: var(--font-s);
+}
+
+.m {
+    font: var(--font-m);
+}
+
+.l {
+    font: var(--font-l);
+}
+
+.xl {
+    font: var(--font-xl);
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.fullWidth {
+    width: 100%;
+}

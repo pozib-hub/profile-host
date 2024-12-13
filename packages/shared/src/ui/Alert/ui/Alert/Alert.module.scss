@@ -1,0 +1,46 @@
+.wrapper {}
+
+.wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: var(--overlay-z-index);
+}
+
+.modal {
+    width: 413px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+.modalContent {
+    padding: 8px;
+}
+
+.body {}
+
+.paragraph {
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    gap: 8px;
+    word-wrap: break-word;
+}
+
+.icon {
+    margin-right: 12px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btns {
+    margin-top: 16px;
+}

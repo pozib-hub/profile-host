@@ -1,0 +1,12 @@
+{
+  "name": "@packages/bulild-config",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "webpack": "^5.69.1",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}

@@ -1,0 +1,18 @@
+.wrapper {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.starIcon {
+    fill: none;
+    color: var(--icon-color);
+}
+
+.hovered {
+    fill: var(--icon-color);
+}
+
+.selected {
+    cursor: auto;
+}

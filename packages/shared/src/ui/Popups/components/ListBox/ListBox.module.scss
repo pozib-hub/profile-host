@@ -1,0 +1,32 @@
+.ListBox {
+    display: flex;
+    min-width: 50px;
+    flex: 1;
+}
+
+.trigger {
+    overflow: hidden;
+    flex: 1;
+}
+
+.contentText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.options {
+    background: var(--dark-bg-color);
+    position: absolute;
+    z-index: 10000;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px var(--dark-bg-color);
+}
+
+.item {
+    padding: 10px 20px;
+}
+
+.selected {
+    background: var(--light-bg-color);
+}

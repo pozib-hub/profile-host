@@ -1,0 +1,38 @@
+.wrapper {}
+
+.tag {
+    text-align: center;
+    cursor: pointer;
+
+    border-radius: 12px;
+    background-color: var(--light-bg-color);
+    border: 2px solid var(--light-bg-color);
+    color: var(--text-color);
+
+    &:hover {
+        opacity: 0.7;
+        border-color: var(--accent-color);
+    }
+
+    &.selected {
+        border-color: var(--accent-color);
+    }
+
+    &.default {
+        font-size: 12px;
+        padding: 2px 12px;
+        min-width: 40px;
+    }
+
+    &.small {
+        font-size: 10px;
+        padding: 1px 4px;
+        line-height: 14px;
+    }
+
+    &.large {
+        font-size: 16x;
+        padding: 6px 20px;
+        min-width: 60px;
+    }
+}

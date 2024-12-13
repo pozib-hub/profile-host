@@ -1,0 +1,40 @@
+.wrapper {
+    padding: 24px;
+    box-shadow: var(--card-box-shadow-color);
+}
+
+.withoutPaddings {
+    padding: 0;
+}
+
+.normal {
+    background: var(--dark-bg-color);
+}
+
+.light {
+    background: var(--light-bg-color);
+}
+
+.outlined {
+    border: 1px solid var(--accent-color);
+}
+
+.normal {
+    border-radius: 12px;
+}
+
+.round {
+    border-radius: 40px;
+}
+
+.partial {
+    border-radius: 20px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.fullHeight {
+    height: 100%;
+}

@@ -1,0 +1,143 @@
+.button {
+  --button-border-color-disabled: #d9d9d9;
+
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+
+
+  .loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      width: 20px;
+      height: 20px;
+      border: 3px solid var(--primary-color-deprecated);
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    border-color: var(--button-border-color-disabled);
+    background: var(--color-bg-container-disabled);
+    color: var(--color-text-disabled);
+  }
+}
+
+.button.loading .content {
+  opacity: 0.3;
+}
+
+// types --------------------
+
+.primary {
+  background: var(--inverted-bg-color-deprecated);
+  border: var(--inverted-bg-color-deprecated);
+  color: var(--text-color-deprecated);
+
+  &:not(.disabled):hover {
+    opacity: 0.8;
+  }
+
+  &:not(.disabled).danger {
+    background-color: var(--color-danger-deprecated);
+    border-color: var(--color-danger-deprecated);
+    color: white;
+  }
+}
+
+.dashed {
+  border: 1px dashed var(--inverted-bg-color-deprecated);
+  color: var(--inverted-bg-color-deprecated);
+  background: none;
+
+  &:not(.disabled):hover {
+    opacity: 0.7;
+  }
+
+  &:not(.disabled).danger {
+    border-color: var(--color-danger-deprecated);
+    color: var(--color-danger-deprecated);
+  }
+}
+
+.transparent {
+  background: none;
+  color: var(--inverted-bg-color-deprecated);
+
+  &:not(.disabled):hover {
+    color: var(--secondary-color-deprecated);
+  }
+
+  &:not(.disabled).danger {
+    color: var(--red-light-deprecated);
+
+    &:hover {
+      color: var(--red-dark-deprecated);
+    }
+  }
+}
+
+.outline {
+  border: 1px solid var(--inverted-bg-color-deprecated);
+  color: var(--inverted-bg-color-deprecated);
+  background: none;
+
+  &:not(.disabled):hover {
+    opacity: 0.7;
+  }
+
+  &:not(.disabled).danger {
+    border-color: var(--color-danger-deprecated);
+    color: var(--color-danger-deprecated);
+  }
+}
+
+// sizes --------------------
+
+.small {
+  padding: 2px 8px;
+  font-size: 0.7em;
+}
+
+.medium {
+  padding: 4px 14px;
+  font-size: 1em;
+}
+
+.large {
+  padding: 8px 20px;
+  font-size: 1.3em;
+}
+
+.clearPadding {
+  padding: 0;
+}
+
+// others --------------------
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

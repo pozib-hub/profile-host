@@ -1,0 +1,39 @@
+.input {
+    color: var(--text-color);
+    background: transparent;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    font-family: SBSansText;
+    font-style: normal;
+    font-weight: normal;
+    font-size: inherit;
+    line-height: inherit;
+    transition: border 200ms ease-in;
+    border: none;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &::placeholder {
+        color: var(--hint-color);
+        font-family: SBSansText;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
