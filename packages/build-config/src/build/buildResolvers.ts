@@ -7,7 +7,7 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
     const pathSRC = options.paths.src
 
     return {
-        extensions: ['.tsx', '.ts', '.js'],
+        extensions: ['.ts', '.tsx', '.js'],
         preferAbsolute: true,
         modules: [pathSRC, 'node_modules'],
         mainFiles: ['index'],

@@ -1,3 +1,3 @@
-import { sum } from "@packages/shared";
+import { sum } from '@packages/shared'
 
-console.log(sum());
+console.log(sum())

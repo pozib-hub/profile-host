@@ -1,13 +1,13 @@
-import React, { FC, memo } from "react";
-import { useTranslation } from "react-i18next";
+import React, { FC, memo } from 'react'
+// import { useTranslation } from "react-i18next";
 
 interface IAppProps {
-  className?: string;
+    className?: string
 }
 export const App: FC<IAppProps> = memo(function App(props) {
-  const { className } = props;
+    const { className } = props
 
-  const { t } = useTranslation();
+    // const { t } = useTranslation();
 
-  return <div className={""}>YEA</div>;
-});
+    return <div className={''}>YEA</div>
+})
